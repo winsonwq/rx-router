@@ -1,6 +1,6 @@
 {
   "name": "rrouter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "reactive router enabled for express",
   "main": "dist/index.js",
   "author": "Wang Qiu <winsonwq@gmail.com> (http://slender-man.github.io/)",
