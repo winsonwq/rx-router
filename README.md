@@ -10,6 +10,24 @@ $ npm i rxrouter -d
 ## demo
 
 ```javascript
+//
+// routes.js
+var express = require('express');
+var router = express.Router();
+
+module.exports = {
+  root: router.rxGet('/', middleware),
+  router: router
+};
+
+function middleware(req, res, next) {
+  req.profile = { name: 'qiu' };
+  req.message = 'hello';
+  next();
+}
+
+//
+// app.js
 var express = require('express');
 var rrouter = require('../../');
 var action = require('./action');
