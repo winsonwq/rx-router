@@ -1,0 +1,22 @@
+{
+  "name": "rrouter",
+  "version": "1.0.0",
+  "description": "reactive router enabled for express",
+  "main": "dist/index.js",
+  "author": "Wang Qiu <winsonwq@gmail.com> (http://slender-man.github.io/)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "mkdir -p dist && babel -w index.js -o dist/index.js",
+    "build": "mkdir -p dist && babel index.js -o dist/index.js",
+    "example": "nodemon examples/helloworld/app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "methods": "^1.1.1",
+    "rx": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "es6-promise": "^3.0.2"
+  }
+}
