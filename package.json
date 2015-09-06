@@ -1,5 +1,5 @@
 {
-  "name": "rx-router",
+  "name": "rxrouter",
   "version": "0.1.0",
   "description": "reactive router enabled for express",
   "main": "dist/index.js",
